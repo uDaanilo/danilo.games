@@ -1,5 +1,5 @@
 <template>
-  <Window id="projects" :title="t('timeline.title')" body-class="section-grid">
+  <Window id="timeline" :title="t('timeline.title')" body-class="section-grid">
     <fieldset v-for="project in timeline" :key="project.title" class="timeline-card">
       <legend>{{ project.title }}</legend>
       <ul v-if="Array.isArray(project.description)" class="description-list">

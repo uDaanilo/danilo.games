@@ -16,16 +16,18 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
-.section-grid {
-  display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
 .window {
   margin-bottom: 24px;
 }
 
 .field-row>*+* {
   margin-left: 0;
+}
+
+.section-grid {
+  display: block;
+}
+
+.section-grid > *:not(:last-child) {
+  margin-bottom: 24px;
 }
